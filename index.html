@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dünya Kupası O Mu Bu Mu?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    :root {
+      --bg: #07111f;
+      --orange: #e87722;
+      --red: #e30613;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background:
+        radial-gradient(circle at 15% 12%, rgba(227,6,19,.28), transparent 32%),
+        radial-gradient(circle at 85% 90%, rgba(232,119,34,.20), transparent 34%),
+        linear-gradient(180deg, #031022 0%, var(--bg) 100%);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      letter-spacing: .8px;
+    }
+
+    .wrap {
+      width: min(760px, 100%);
+      background: rgba(5,12,23,.92);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.55);
+      padding: 34px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(48px, 9vw, 92px);
+      line-height: .9;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    h1 span { color: var(--orange); }
+
+    .sub {
+      margin: 0 0 28px;
+      font-size: clamp(20px, 4vw, 34px);
+      opacity: .88;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      display: grid;
+      gap: 14px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: var(--white);
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1;
+      padding: 20px 22px;
+      border-radius: 18px;
+      border: 2px solid rgba(232,119,34,.9);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      box-shadow: 0 10px 26px rgba(0,0,0,.28);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+      border-color: #ff9b45;
+    }
+
+    .handle {
+      margin-top: 24px;
+      font-size: 24px;
+      color: rgba(255,255,255,.72);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>O <span>MU</span> BU <span>MU</span>?</h1>
+    <p class="sub">Dünya Kupası oyunları</p>
+
+    <nav class="menu">
+      <a href="games/kits-2.html">👕 2026 FIFA Dünya Kupası Formaları - Bölüm 2</a>
+    </nav>
+
+    <div class="handle">@deker.videos</div>
+  </main>
+</body>
+</html>
